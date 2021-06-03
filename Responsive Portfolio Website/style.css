@@ -311,6 +311,10 @@ Contact
 	border-right: 50px solid rgb(222, 115, 225, 0.75);
 }
 
+.contact p {
+	text-align: center;
+}
+
 .container {
 	width:100%;
 	margin:0 auto;
