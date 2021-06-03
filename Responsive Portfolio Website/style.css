@@ -367,6 +367,8 @@ form .submit:hover {
 	cursor:pointer;
 }
 
+/* Mid-size and smaller */
+
 @media (max-width: 900px) {
 	.toggle-button {
 		display:flex;
@@ -396,8 +398,6 @@ form .submit:hover {
 
 	
 	.nav-links li a {
-
-		/**/
 		background-color: transparent;
 		border:transparent;
 		padding:3px 10px;
@@ -500,9 +500,6 @@ form .submit:hover {
 	*/
 
 	.work-sectionTitle {
-		display:flex;
-		justify-content: center;
-
 		border-left: 35px solid rgba(45, 110, 147, 0.75);
 		border-right: 35px solid rgba(45, 110, 147, 0.75);
 	}
@@ -517,12 +514,54 @@ form .submit:hover {
 	.work img {
 		width:400px;
 	}
-
-	/*
-	Contact
-	*/
 }
 
+/* Small */
+@media (max-width: 500px) {
+	:root {
+	--fs-h1: 2.9em;
+	--fs-h2: 2.4em;
+	--fs-h3: 1.4em;
+	--fs-body: 0.9em;
+	}
+	.nav-links li {
+		padding:7.5px;
+	}
+
+	.toggle-button {
+		position:absolute;
+		top:1.2rem;
+		right:1rem;
+	}
+
+	.sectionTitle {
+		border-bottom: 5px dotted var(--clr-yellow);
+	}
+	.about-sectionTitle {
+		border:none;
+	}
+
+	.about {
+		border:none;
+	}
+
+	.work-sectionTitle {
+		border:none;
+	}
+
+	.work {
+		border:none;
+	}
+
+	.contact-sectionTitle {
+		border:none;
+	}
+
+	.contact {
+		border:none;
+		padding:25px;
+	}
+}
 
 
 
