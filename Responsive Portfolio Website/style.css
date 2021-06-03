@@ -87,12 +87,6 @@ nav h3 {
 	
 }
 
-.nav-links li a:hover {
-	transition: all 0.3s ease 0s;
-	background-color: rgba(222, 115, 225, 0.5);
-	color:var(--clr-dark);
-}
-
 .navLinks li a:visited {
 	transition: all 0.3s ease 0s;
 	color:var(--clr-dark);
@@ -364,9 +358,16 @@ form .submit {
 	width:100%;
 }
 
-form .submit:hover {
-	background-color: rgba(54, 139, 187, 0.75);
-	cursor:pointer;
+@media (hover:hover) {
+	.nav-links li a:hover {
+		transition: all 0.3s ease 0s;
+		background-color: rgba(222, 115, 225, 0.5);
+		color:var(--clr-dark);
+	}
+	form .submit:hover {
+		background-color: rgba(54, 139, 187, 0.75);
+		cursor:pointer;
+	}
 }
 
 /* Mid-size and smaller */
